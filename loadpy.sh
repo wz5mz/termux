@@ -1,4 +1,4 @@
-#! /data/data/com.termux/files/usr/bin/bash/sh
+#! /data/data/com.termux/files/usr/bin/bash
 
 # $1 = github repository name (NO slashes) e.g. tumor-entry
 # $2 = filename to load into ~/.termux/tasker/ with extension (NO slashes) e.g. myscript.py
