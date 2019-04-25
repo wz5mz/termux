@@ -4,7 +4,7 @@
 # $2 = filename to load into ~/.termux/tasker/ with extension (NO slashes) e.g. myscript.py
 
 url=https://github.com/wz5mz/
-url+=$1
+url+=1
 url+=.git
 echo $url
 
