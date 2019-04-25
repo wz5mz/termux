@@ -6,7 +6,7 @@
 url=https://github.com/wz5mz/
 url+=1
 url+=.git
-echo $url
+echo $url$1
 
 copypath=./
 copypath+=$1
