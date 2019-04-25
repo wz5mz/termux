@@ -22,10 +22,10 @@ echo $path2
 #rm -rf $1
 
 cd ~/
-git clone "https://github.com/wz5mz/enter-tumor.git"
-cp "./enter-tumor/enter_size.py" ~/.termux/tasker/
+git clone "https://github.com/wz5mz/tumor-entry.git"
+cp "./tumor-entry/enter_size.py" ~/.termux/tasker/
 cd ~/.termux/tasker/
 termux-fix-shebang "./enter_size.py"
 chmod +x "./enter_size.py"
 cd ~/
-rm -rf "enter-tumor"
+rm -rf "tumor-entry"
