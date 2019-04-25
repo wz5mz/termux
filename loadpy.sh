@@ -1,9 +1,9 @@
-#! /data/data/com.termux/files/usr/bin/sh
+#! /data/data/com.termux/files/usr/bin/bash
 
 # $1 = github repository name (NO slashes) e.g. tumor-entry
 # $2 = filename to load into ~/.termux/tasker/ with extension (NO slashes) e.g. myscript.py
 
-url="https://github.com/wz5mz/${$1}.git"
+url="https://github.com/wz5mz/$1.git"
 echo $url
 
 copypath=./
