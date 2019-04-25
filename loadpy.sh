@@ -1,5 +1,5 @@
 #! /data/data/com.termux/files/usr/bin/bash
-
+-
 # $1 = github repository name (NO slashes) e.g. tumor-entry
 # $2 = filename to load into ~/.termux/tasker/ with extension (NO slashes) e.g. myscript.py
 
@@ -12,20 +12,11 @@ echo $copypath
 path2=./$2
 echo $path2
 
-#cd ~/
-#git clone $url
-#cp $copypath ~/.termux/tasker/
-#cd ~/.termux/tasker/
-#termux-fix-shebang $path2
-#chmod +x $path2
-#cd ~/
-#rm -rf $1
-
 cd ~/
-git clone "https://github.com/wz5mz/tumor-entry.git"
-cp "./tumor-entry/enter_size.py" ~/.termux/tasker/
+git clone $url
+cp $copypath ~/.termux/tasker/
 cd ~/.termux/tasker/
-termux-fix-shebang "./enter_size.py"
-chmod +x "./enter_size.py"
+termux-fix-shebang $path2
+chmod +x $path2
 cd ~/
-rm -rf "tumor-entry"
+rm -rf $1
