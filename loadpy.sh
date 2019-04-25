@@ -6,14 +6,10 @@
 url="https://github.com/wz5mz/$1.git"
 echo $url
 
-copypath=./
-copypath+=$1
-copypath+=/
-copypath+=$2
+copypath=./$1/$2
 echo $copypath
 
-path2=./
-path2+=$2
+path2=./$2
 echo $path2
 
 cd ~/
