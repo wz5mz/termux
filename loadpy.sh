@@ -12,11 +12,20 @@ echo $copypath
 path2=./$2
 echo $path2
 
+#cd ~/
+#git clone $url
+#cp $copypath ~/.termux/tasker/
+#cd ~/.termux/tasker/
+#termux-fix-shebang $path2
+#chmod +x $path2
+#cd ~/
+#rm -rf $1
+
 cd ~/
-git clone $url
-cp $copypath ~/.termux/tasker/
+git clone "https://github.com/wz5mz/enter-tumor.git"
+cp "./enter-tumor/enter_size.py" ~/.termux/tasker/
 cd ~/.termux/tasker/
-termux-fix-shebang $path2
-chmod +x $path2
+termux-fix-shebang "./enter_size.py"
+chmod +x "./enter_size.py"
 cd ~/
-rm -rf $1
+rm -rf "enter-tumor"
